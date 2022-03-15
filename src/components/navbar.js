@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "../img/ida-logo.jpeg";
+/* import logo from "../img/ida-logo.jpeg"; */
 
 const Nav = styled.nav`
   display: none;
@@ -46,7 +46,7 @@ const Navbar = () => {
       <Logo>WEB DESIGN</Logo>
       <Navlinks>
         <Link href="/">Home</Link>
-        <Link href="/">About me</Link>
+        <Link href="/">About</Link>
         <Link href="/">Featured</Link>
         <Link href="/">Pricing</Link>
         <Link href="/">Contact</Link>

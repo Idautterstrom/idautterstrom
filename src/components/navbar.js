@@ -9,6 +9,8 @@ const Nav = styled.nav`
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    padding-right: 30px;
+    padding-left: 30px;
     background-color: #e2d1f9;
     border: 1px solid black;
   }
@@ -16,7 +18,7 @@ const Nav = styled.nav`
 
 const Navlinks = styled.div`
   display: flex;
-  gap: 40px;
+  gap: 70px;
 `;
 
 const Link = styled.a`
@@ -24,7 +26,6 @@ const Link = styled.a`
   text-decoration: none;
   font-size: 10px;
   font-weight: bold;
-  padding-right: 30px;
   color: #317773;
   &:hover {
     text-decoration: underline;
@@ -37,7 +38,6 @@ const Link = styled.a`
 const Logo = styled.p`
   font-family: "DM Serif Display", serif;
   font-size: 40px;
-  padding-left: 20px;
 `;
 
 const Navbar = () => {

@@ -24,7 +24,7 @@ const Navlinks = styled.div`
 const Link = styled.a`
   font-family: "poppins", sans serif;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
   color: #317773;
   &:hover {
@@ -43,7 +43,7 @@ const Logo = styled.p`
 const Navbar = () => {
   return (
     <Nav>
-      <Logo>WEB DESIGN</Logo>
+      <Logo>'FANCY LOGO'</Logo>
       <Navlinks>
         <Link href="/">Home</Link>
         <Link href="/">About</Link>

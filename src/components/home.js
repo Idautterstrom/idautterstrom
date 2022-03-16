@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Navbar from "./navbar";
 import Header from "./header";
+import About from "./about";
 import Footer from "./footer";
 
 const HomeGrid = styled.div`
@@ -16,11 +17,11 @@ const HomeGrid = styled.div`
 const Home = () => {
   return (
     <HomeGrid>
-        <div>
-      <Navbar />
-      <Header />
+      <div>
+        <Navbar />
+        <Header />
       </div>
-      <div>Här kommer text</div>
+      <About />
       <Footer />
     </HomeGrid>
   );

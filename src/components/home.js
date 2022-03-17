@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Navbar from "./navbar";
 import Header from "./header";
-import About from "./about";
+import About from "./info";
 import Footer from "./footer";
 
 const HomeGrid = styled.div`

@@ -32,8 +32,8 @@ const Header = () => {
       {" "}
       <Box>
         <h2>
-          Welcome, I'm Ida. <br></br>I design & develop websites. <br></br>For
-          fun.
+          Welcome, I'm Ida. <br></br>I design & develop websites. <br></br>
+          Mostly for fun.
         </h2>
       </Box>
       <ReactPlayer

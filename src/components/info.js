@@ -32,8 +32,6 @@ const Link = styled.a`
   font-size: 30px;
   font-weight: bold;
   margin-top: 150px;
-  margin-left: 30px;
-  margin-bottom: 25px;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -59,6 +57,8 @@ const Photo = styled.div`
 
 const Text = styled.p`
   text-align: justify;
+  font-family: "Poppins", serif;
+  font-size: 12px;
 `;
 
 const Info = () => {
@@ -82,10 +82,12 @@ const Info = () => {
         </DivContainer>
       </DivNoColor>
       <Div>
-        <Link href="https://www.linkedin.com/in/ida-u-9361b7a9">
-          Contact me
-        </Link>
-        <Text></Text>
+        <DivContainer>
+          <Link href="https://www.linkedin.com/in/ida-u-9361b7a9">
+            Contact me
+          </Link>
+          <Text></Text>
+        </DivContainer>
       </Div>
       <Photo></Photo>
     </Container>

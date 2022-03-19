@@ -2,13 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const FootBox = styled.section`
-  background-color: #91c4f2;
+  background-color: #548687;
+  text-align: center;
+`;
+
+const Text = styled.h3`
+  color: #c5fad5;
+  font-family: "poppins", serif;
+  font-size: 12px;
 `;
 
 const Footer = () => {
   return (
     <FootBox>
-      <h3>Footer</h3>
+      <Text>
+        Website made by<br></br>LOGO
+      </Text>
     </FootBox>
   );
 };

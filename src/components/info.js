@@ -13,6 +13,13 @@ const Container = styled.section`
   } ;
 `;
 
+const DivContainer = styled.div`
+  display: flex;
+  grid-template-columns; row;
+  grid-gap: 30px;
+  margin-top: -20px;
+`;
+
 const Header = styled.h1`
   font-family: "DM Serif Display", serif;
   font-size: 30px;
@@ -45,23 +52,34 @@ const DivNoColor = styled.div`
 `;
 
 const Photo = styled.div`
-  display: flex;
-  background-image: url(${Image});
-  width: 400px;
+  object-fit: cover;
+  width: 100%;
   height: 400px;
 `;
 
-const Text = styled.p``;
+const Text = styled.p`
+  text-align: justify;
+`;
 
 const Info = () => {
   return (
     <Container>
       <DivNoColor>
         <Header>About</Header>
-        <Text>
-          I work fulltime as a Business developer, Product Owner, People &
-          Culture consultant
-        </Text>
+        <DivContainer>
+          <Text>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </Text>
+          <Text>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </Text>
+        </DivContainer>
       </DivNoColor>
       <Div>
         <Link href="https://www.linkedin.com/in/ida-u-9361b7a9">

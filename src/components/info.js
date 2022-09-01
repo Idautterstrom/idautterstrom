@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "../img/candy.jpeg";
+import CandyImg from "../img/candy.jpeg";
 
 const Container = styled.section`
   display: grid;
@@ -50,8 +50,7 @@ const DivNoColor = styled.div`
 `;
 
 const Photo = styled.div`
-  object-fit: cover;
-  width: 100%;
+  display: flex;
   height: 400px;
 `;
 
@@ -86,10 +85,11 @@ const Info = () => {
           <Link href="https://www.linkedin.com/in/ida-u-9361b7a9">
             Contact me
           </Link>
-          <Text></Text>
         </DivContainer>
       </Div>
-      <Photo></Photo>
+      <Photo>
+        <img src={CandyImg} alt="Candy image" />
+      </Photo>
     </Container>
   );
 };

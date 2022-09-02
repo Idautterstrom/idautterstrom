@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import CandyImg from "../img/candy.jpeg";
+import Email from "../img/email.png";
+import Phone from "../img/phone-call.png";
+import LinkedIn from "../img/Li-logo.png";
 
 const Container = styled.section`
   display: grid;
@@ -26,17 +28,17 @@ const Header = styled.h1`
   font-weight: bold;
 `;
 
-const Link = styled.a`
-  font-family: "DM Serif Display", serif;
-  color: #875053;
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 150px;
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
+// const Link = styled.a`
+//   font-family: "DM Serif Display", serif;
+//   color: #875053;
+//   font-size: 30px;
+//   font-weight: bold;
+//   margin-top: 150px;
+//   text-decoration: none;
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// `;
 
 const Div = styled.div`
   background: #fbbfca;
@@ -49,15 +51,16 @@ const DivNoColor = styled.div`
   padding: 20px;
 `;
 
-const Photo = styled.div`
-  display: flex;
-  height: 400px;
-`;
-
 const Text = styled.p`
   text-align: justify;
   font-family: "Poppins", serif;
   font-size: 12px;
+`;
+
+const Img = styled.div`
+  display: flex;
+  height: 30px;
+  margin-top: 200px;
 `;
 
 const Info = () => {
@@ -82,14 +85,17 @@ const Info = () => {
       </DivNoColor>
       <Div>
         <DivContainer>
-          <Link href="https://www.linkedin.com/in/ida-u-9361b7a9">
-            Contact me
-          </Link>
+          <Img>
+            <img src={Email} alt="email" />
+          </Img>
+          <Img>
+            <img src={Phone} alt="phone" />
+          </Img>
+          <Img>
+            <img src={LinkedIn} alt="linkedin" />
+          </Img>
         </DivContainer>
       </Div>
-      <Photo>
-        <img src={CandyImg} alt="Candy image" />
-      </Photo>
     </Container>
   );
 };

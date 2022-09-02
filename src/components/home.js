@@ -1,10 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import Navbar from "./navbar";
 import Header from "./header";
 import About from "./info";
-import Footer from "./footer";
 
 const HomeGrid = styled.div`
   display: grid;
@@ -18,11 +16,9 @@ const Home = () => {
   return (
     <HomeGrid>
       <div>
-        <Navbar />
         <Header />
       </div>
       <About />
-      <Footer />
     </HomeGrid>
   );
 };

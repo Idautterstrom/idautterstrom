@@ -46,10 +46,10 @@ const Navbar = () => {
       <Logo>'FANCY LOGO'</Logo>
       <Navlinks>
         <Link href="/">Home</Link>
-        <Link href="/">About</Link>
-        <Link href="/">Featured</Link>
-        <Link href="/">Pricing</Link>
-        <Link href="/">Contact</Link>
+        <Link href="/about">About</Link>
+        <Link href="/featured">Featured</Link>
+        <Link href="/pricing">Pricing</Link>
+        <Link href="/contact">Contact</Link>
       </Navlinks>
     </Nav>
   );

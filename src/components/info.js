@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Email from "../img/email.png";
-import Phone from "../img/phone-call.png";
+import Email from "../img/Email.png";
+import Phone from "../img/Phone.png";
 import LinkedIn from "../img/Li-logo.png";
 
 const Container = styled.section`

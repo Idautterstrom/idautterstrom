@@ -1,58 +1,67 @@
-import React from "react";
-import styled from "styled-components";
-/* import logo from "../img/ida-logo.jpeg"; */
+import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "./styles/navbar.css";
 
-const Nav = styled.nav`
-  display: none;
-  @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-    padding-right: 30px;
-    padding-left: 30px;
-    background-color: #e2d1f9;
-    border: 1px solid black;
-  }
-`;
+export default function Navbar() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
-const Navlinks = styled.div`
-  display: flex;
-  gap: 70px;
-`;
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu);
+  };
 
-const Link = styled.a`
-  font-family: "poppins", sans serif;
-  text-decoration: none;
-  font-size: 12px;
-  font-weight: bold;
-  color: #317773;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:active {
-    color: green;
-  }
-`;
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
 
-const Logo = styled.p`
-  font-family: "DM Serif Display", serif;
-  font-size: 40px;
-`;
+    window.addEventListener("resize", changeWidth);
 
-const Navbar = () => {
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+
   return (
-    <Nav>
-      <Logo>'FANCY LOGO'</Logo>
-      <Navlinks>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/featured">Featured</Link>
-        <Link href="/pricing">Pricing</Link>
-        <Link href="/contact">Contact</Link>
-      </Navlinks>
-    </Nav>
-  );
-};
+    <div>
+      <nav>
+        <h1 className="logo">'FANCY LOGO'</h1>
 
-export default Navbar;
+        {(toggleMenu || screenWidth > 500) && (
+          <ul className="list">
+            <li className="items">
+              <a className="link" href="/">
+                home
+              </a>
+            </li>
+            <li className="items">
+              <a className="link" href="/about">
+                about
+              </a>
+            </li>
+            <li className="items">
+              <a className="link" href="/featured">
+                featured
+              </a>
+            </li>
+            <li className="items">
+              <a className="link" href="/pricing">
+                pricing
+              </a>
+            </li>
+            <li className="items">
+              <a className="link" href="/contact">
+                contact
+              </a>
+            </li>
+          </ul>
+        )}
+
+        <button onClick={toggleNav} className="btn">
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+      </nav>
+    </div>
+  );
+}

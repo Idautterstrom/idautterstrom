@@ -3,7 +3,9 @@ import React from "react";
 const Contact = () => {
   return (
     <section>
-      <p>Hey</p>
+      <h1>CONTANCT</h1>
+      <p>ida.utterstrom@hotmail.com</p>
+      <p>+46 76 046 50 94</p>
     </section>
   );
 };

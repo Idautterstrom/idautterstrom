@@ -2,6 +2,13 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import "./styles/navbar.css";
+import Logo from "../img/LOGO 2.png";
+import styled from "styled-components";
+
+const LogoContainer = styled.div`
+  display: flex;
+  height: 20px;
+`;
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -26,7 +33,9 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-        <h1 className="logo">'FANCY LOGO'</h1>
+        <LogoContainer>
+          <img src={Logo} alt="logo" />
+        </LogoContainer>
 
         {(toggleMenu || screenWidth > 500) && (
           <ul className="list">

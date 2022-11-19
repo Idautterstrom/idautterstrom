@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Email from "../img/Email.png";
-import Phone from "../img/Phone.png";
-import LinkedIn from "../img/Li-logo.png";
 
 const Container = styled.section`
   display: grid;
@@ -17,7 +14,6 @@ const Container = styled.section`
 
 const DivContainer = styled.div`
   display: flex;
-  grid-template-columns; row;
   grid-gap: 30px;
   margin-top: -20px;
 `;
@@ -27,18 +23,6 @@ const Header = styled.h1`
   font-size: 30px;
   font-weight: bold;
 `;
-
-// const Link = styled.a`
-//   font-family: "DM Serif Display", serif;
-//   color: #875053;
-//   font-size: 30px;
-//   font-weight: bold;
-//   margin-top: 150px;
-//   text-decoration: none;
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// `;
 
 const Div = styled.div`
   background: #fbbfca;
@@ -54,13 +38,37 @@ const DivNoColor = styled.div`
 const Text = styled.p`
   text-align: justify;
   font-family: "Poppins", serif;
-  font-size: 12px;
+  font-size: 10px;
 `;
 
-const Img = styled.div`
+const TextColor = styled.p`
+  text-align: justify;
+  font-family: "Poppins", serif;
+  font-weight: bold;
+  font-size: 10px;
+  color: #ef5157;
+`;
+
+const CitatContainer = styled.div`
   display: flex;
-  height: 30px;
-  margin-top: 200px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+`;
+
+const Citat = styled.a`
+  display: flex;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: "DM Serif Display", serif;
+  color: #ef5157;
+  cursor: pointer;
+  &:hover {
+    font-weight: bold;
+  }
 `;
 
 const Info = () => {
@@ -84,17 +92,15 @@ const Info = () => {
         </DivContainer>
       </DivNoColor>
       <Div>
-        <DivContainer>
-          <Img>
-            <img src={Email} alt="email" />
-          </Img>
-          <Img>
-            <img src={Phone} alt="phone" />
-          </Img>
-          <Img>
-            <img src={LinkedIn} alt="linkedin" />
-          </Img>
-        </DivContainer>
+        <CitatContainer>
+          <Citat href="/featured">
+            "Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum."
+          </Citat>
+          <TextColor>Name, Company</TextColor>
+        </CitatContainer>
       </Div>
     </Container>
   );

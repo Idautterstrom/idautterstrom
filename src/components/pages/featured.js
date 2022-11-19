@@ -2,39 +2,31 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 20px;
 `;
 
 const HeaderContainer = styled.div`
   display: flex;
   border-bottom-style: double;
-  margin-left: 10%;
-  margin-right: 10%;
   justify-content: center;
 `;
 
 const HeadContainer = styled.div`
   display: flex;
+
 `;
 
 const SecondContainer = styled.div`
-  display: flex;
   flex-direction: column;
   border-right-style: double;
   margin-top: 20px;
 `;
 
-const HeaderText = styled.h2`
-  font-family: "raleway", serif;
-  font-size: 40px;
-`;
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
   margin-right: 10px;
   margin-top: 20px;
   padding: 20px;
@@ -69,14 +61,11 @@ const Text = styled.p`
   margin-top: -5px;
 `;
 
-const AboutContainer = styled.div`
-  display: flex;
-`;
+const AboutContainer = styled.div``;
 
 const Div = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
   margin-right: 10px;
   margin-top: 20px;
   padding: 20px;

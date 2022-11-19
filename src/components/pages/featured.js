@@ -12,6 +12,10 @@ const HeaderContainer = styled.div`
   padding: 20px;
   background-color: black;
   border-radius: 10px;
+
+  &:hover {
+    background-color: green;
+  }
 `;
 
 const Header = styled.h1`
@@ -54,20 +58,21 @@ const Featured = () => {
   return (
     <section>
       <HeaderContainer>
+        <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
+        <Text>
+          Business Strategy, Project Managagement, Product Ownership, People
+          Experience, Agility, Marketing
+        </Text>
+      </HeaderContainer>
+      <HeaderContainer>
         <Header>WEB DEVELOPMENT</Header>
-        <Text>JavaScript, React, Styled Components</Text>
+        <Text>JavaScript, React, Styled Components, HTML, CSS</Text>
       </HeaderContainer>
       <HeaderContainer>
         <Header>LEATHER WORK</Header>
         <Text>Handmade products from vegetable tanned eco leather</Text>
       </HeaderContainer>
-      <HeaderContainer>
-        <Header>BUSINESS DEVELOPMENT</Header>
-        <Text>
-          Business Strategy, Project Manager, Product Owner, People Experience,
-          Agility, Marketing
-        </Text>
-      </HeaderContainer>
+
       <HeaderContainer>
         <Header>OTHER</Header>
         <Text>Projects & Hobbies</Text>

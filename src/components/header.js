@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import heroVideo from "../img/herovideo.mp4";
+import Video from "../img/Video2.mp4";
 import styled from "styled-components";
 
 const Hero = styled.section`
@@ -9,9 +9,12 @@ const Hero = styled.section`
 `;
 
 const Box = styled.div`
-  height: 100%;
   display: flex;
   flex-direction: column;
+  margin-top: 15%;
+  padding: 50px;
+  border-radius: 10px;
+  background-color: black;
   position: absolute;
   justify-content: center;
   margin-left: 10px;
@@ -26,24 +29,21 @@ const Box = styled.div`
   }
 `;
 
+const Text = styled.h2`
+  font-family: "poppins", serif;
+  color: white;
+`;
+
 const Header = () => {
   return (
     <Hero>
       {" "}
       <Box>
-        <h2>
-          Welcome, I'm Ida. <br></br>I design & develop websites. <br></br>
-          Mostly for fun.
-        </h2>
+        <Text>
+          Welcome, I'm Ida. <br></br>This is my Portfolio & Resumé.
+        </Text>
       </Box>
-      <ReactPlayer
-        url={heroVideo}
-        playing
-        loop
-        muted
-        width="100%"
-        height="100%"
-      />
+      <ReactPlayer url={Video} playing loop muted width="100%" height="100%" />
     </Hero>
   );
 };

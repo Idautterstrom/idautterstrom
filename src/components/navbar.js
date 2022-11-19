@@ -51,7 +51,7 @@ export default function Navbar() {
             </li>
             <li className="items">
               <a className="link" href="/featured">
-                featured
+                featured | resumé
               </a>
             </li>
             <li className="items">

@@ -4,41 +4,30 @@ import Email from "../img/Email.png";
 import Phone from "../img/Phone.png";
 import LinkedIn from "../img/Li-logo.png";
 import Instagram from "../img/Instagram.png";
-import Logo from "../img/LOGO 2.png";
 
 const FootBox = styled.section`
   display: flex;
-  justify-content: space-between;
-
-  background-color: #548687;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   gap: 100px;
   margin-top: auto;
-`;
-
-const LogoContainer = styled.div`
-  display: flex;
-  height: 20px;
+  height: 100px;
 `;
 
 const Container = styled.div`
   display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
+  gap: 20px;
 `;
 
 const Img = styled.a`
   display: flex;
-  height: 20px;
+  height: 40px;
 `;
 
 const Footer = () => {
   return (
     <FootBox>
-      <LogoContainer>
-        <img src={Logo} alt="logo" />
-      </LogoContainer>
       <Container>
         <Img href="mailto: ida.utterstrom@hotmail.com">
           <img src={Email} alt="email" />

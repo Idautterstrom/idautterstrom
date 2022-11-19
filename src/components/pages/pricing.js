@@ -2,24 +2,29 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
-`;
-
-const HeaderContainer = styled.div`
+  margin-left: 20px;
+  margin-right: 20px;
   padding: 20px;
 `;
 
+const HeaderContainer = styled.div`
+  display: flex;
+  border-bottom-style: double;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+`;
+
 const Header = styled.h1`
-  font-family: "DM Serif Display", serif;
-  font-size: 20px;
-  color: #fbbfca;
+  font-family: "raleway", serif;
+  font-size: 40px;
 `;
 
 const DivContainer = styled.div`
   display: flex;
   flex-direction: row;
+  margin-top: 40px;
+  justify-content: center;
 `;
 
 const Container = styled.div`
@@ -48,7 +53,7 @@ const Pricing = () => {
   return (
     <Section>
       <HeaderContainer>
-        <Header>PRICING</Header>
+        <Header>price for websites.</Header>
       </HeaderContainer>
       <DivContainer>
         <Container>

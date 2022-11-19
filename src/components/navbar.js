@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const LogoContainer = styled.div`
   display: flex;
-  height: 20px;
+  height: 30px;
 `;
 
 export default function Navbar() {

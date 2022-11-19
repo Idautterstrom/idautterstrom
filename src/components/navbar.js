@@ -45,11 +45,6 @@ export default function Navbar() {
               </a>
             </li>
             <li className="items">
-              <a className="link" href="/about">
-                about
-              </a>
-            </li>
-            <li className="items">
               <a className="link" href="/featured">
                 featured | resumé
               </a>

@@ -15,6 +15,17 @@ const HeaderContainer = styled.div`
   justify-content: center;
 `;
 
+const HeadContainer = styled.div`
+  display: flex;
+`;
+
+const SecondContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-right-style: double;
+  margin-top: 20px;
+`;
+
 const HeaderText = styled.h2`
   font-family: "raleway", serif;
   font-size: 40px;
@@ -24,10 +35,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 15%;
-  margin-right: 15%;
+  margin-right: 10px;
   margin-top: 20px;
   padding: 20px;
-  border-bottom-style: double;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
@@ -47,16 +57,33 @@ const Container = styled.div`
 const Header = styled.h1`
   font-family: "Raleway", serif;
   font-size: 20px;
-  text-align: center;
+  text-align: right;
   color: black;
 `;
 
 const Text = styled.p`
   font-family: "Poppins", serif;
   font-size: 12px;
-  text-align: center;
+  text-align: right;
   color: black;
   margin-top: -5px;
+`;
+
+const AboutContainer = styled.div`
+  display: flex;
+`;
+
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: 15%;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 20px;
+`;
+
+const AboutText = styled.h1`
+  font-family: "railway", serif;
 `;
 
 const Featured = () => {
@@ -65,28 +92,46 @@ const Featured = () => {
       <HeaderContainer>
         <HeaderText>explore my experience.</HeaderText>
       </HeaderContainer>
-      <Container>
-        <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
-        <Text>
-          View my experience in Business Strategy, Project Managagement, Product
-          Ownership, People Experience & Marketing
-        </Text>
-      </Container>
-      <Container>
-        <Header>WEB DEVELOPMENT</Header>
-        <Text>
-          Single- and multipage websites for freelancers or small companies
-        </Text>
-      </Container>
-      <Container>
-        <Header>LEATHER WORK</Header>
-        <Text>Handmade products from vegetable tanned eco leather</Text>
-      </Container>
+      <HeadContainer>
+        <SecondContainer>
+          <a href="/resume">
+            <Container>
+              <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
+              <Text>
+                View my experience in Business Strategy, Project Managagement,
+                Product Ownership, People Experience & Marketing
+              </Text>
+            </Container>
+          </a>
+          <a href="/webdevelopment">
+            <Container>
+              <Header>WEB DEVELOPMENT</Header>
+              <Text>
+                Single- and multipage websites for freelancers or small
+                companies
+              </Text>
+            </Container>
+          </a>
+          <a href="/leatherwork">
+            <Container>
+              <Header>LEATHER WORK</Header>
+              <Text>Handmade products from vegetable tanned eco leather</Text>
+            </Container>
+          </a>
 
-      <Container>
-        <Header>OTHER</Header>
-        <Text>Projects & Hobbies</Text>
-      </Container>
+          <a href="/other">
+            <Container>
+              <Header>OTHER</Header>
+              <Text>Projects & Hobbies</Text>
+            </Container>
+          </a>
+        </SecondContainer>
+        <AboutContainer>
+          <Div>
+            <AboutText>About me</AboutText>
+          </Div>
+        </AboutContainer>
+      </HeadContainer>
     </Section>
   );
 };

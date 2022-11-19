@@ -4,20 +4,32 @@ import Green from "../../../img/Greenbag.JPG";
 import Black from "../../../img/Blackbag.JPG";
 import Computercase from "../../../img/Computercase.JPG";
 
+const Container = styled.div`
+  display: flex;
+  gap: 10px;
+  margin: 40px;
+  justify-content: center;
+`;
+
+const Img = styled.div`
+  display: flex;
+  height: 400px;
+`;
+
 const Leather = () => {
   return (
     <section>
-      <div>
-        <div>
+      <Container>
+        <Img>
           <img src={Green} alt="Green" />
-        </div>
-        <div>
+        </Img>
+        <Img>
           <img src={Black} alt="Black" />
-        </div>
-        <div>
+        </Img>
+        <Img>
           <img src={Computercase} alt="Computercase" />
-        </div>
-      </div>
+        </Img>
+      </Container>
     </section>
   );
 };

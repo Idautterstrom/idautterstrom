@@ -9,26 +9,6 @@ const Container = styled.section`
   justify-content: center;
 `;
 
-/* const ArrowContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`;
-
-const Arrow = styled.p`
-  font-size: 30px;
-  
-`;
-
-const Text = styled.p`
-  font-family: "raleway", serif;
-  font-size: 30px;
-  font-weight: bold;
-`; */
-
 const FormContainer = styled.div``;
 
 const Contact = () => {
@@ -67,10 +47,6 @@ const Contact = () => {
           </button>
         </form>
       </FormContainer>
-      {/*      <ArrowContainer>
-        <Text>Or contact me below</Text>
-        <Arrow>↓</Arrow>
-      </ArrowContainer> */}
     </Container>
   );
 };

@@ -1,10 +1,15 @@
 import React from "react";
-import styled from "styled-components";
-
 
 const Resume = () => {
   return (
-   <div></div>
+    <section>
+      <div>
+        <h1>Experience</h1>
+      </div>
+      <div>
+        <h1>Featured projects</h1>
+      </div>
+    </section>
   );
 };
 

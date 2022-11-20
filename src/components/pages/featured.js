@@ -6,6 +6,11 @@ const Section = styled.section`
   margin-right: 10%;
   padding: 20px;
 `;
+const HeaderText = styled.p`
+  font-family: "raleway", serif;
+  font-size: 60px;
+  font-weight: bold;
+`;
 
 const HeaderContainer = styled.div`
   display: flex;
@@ -14,8 +19,8 @@ const HeaderContainer = styled.div`
 `;
 
 const HeadContainer = styled.div`
-  display: flex;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 `;
 
 const SecondContainer = styled.div`
@@ -24,29 +29,32 @@ const SecondContainer = styled.div`
   margin-top: 20px;
 `;
 
-const Container = styled.div`
+const Container = styled.a`
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px whitesmoke;
   margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 40px;
   padding: 20px;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
-
   &:hover {
     animation-name: bounce;
     animation-timing-function: ease;
   }
   @keyframes bounce {
     0%   { transform: translateY(0); }
-    50%  { transform: translateY(-10px); }
+    50%  { transform: translateY(-20px); }
     100% { transform: translateY(0); }
   }
   }
 `;
 
-const Header = styled.h1`
+const Header = styled.p`
   font-family: "Raleway", serif;
   font-size: 20px;
   text-align: right;
@@ -61,65 +69,62 @@ const Text = styled.p`
   margin-top: -5px;
 `;
 
-const AboutContainer = styled.div``;
-
 const Div = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 10px;
   margin-top: 20px;
-  padding: 20px;
+  margin-left: 20px;
 `;
 
-const AboutText = styled.h1`
-  font-family: "railway", serif;
+const AboutText = styled.p`
+  font-family: "poppins", serif;
+  font-size: 40px;
+  color: black;
+  margin-right: 100px;
 `;
+
+const SmallText = styled.p``;
 
 const Featured = () => {
   return (
     <Section>
       <HeaderContainer>
-        <HeaderText>explore my experience.</HeaderText>
+        <HeaderText>Welcome to my creative hub.</HeaderText>
       </HeaderContainer>
       <HeadContainer>
         <SecondContainer>
-          <a href="/resume">
-            <Container>
-              <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
-              <Text>
-                View my experience in Business Strategy, Project Managagement,
-                Product Ownership, People Experience & Marketing
-              </Text>
-            </Container>
-          </a>
-          <a href="/webdevelopment">
-            <Container>
-              <Header>WEB DEVELOPMENT</Header>
-              <Text>
-                Single- and multipage websites for freelancers or small
-                companies
-              </Text>
-            </Container>
-          </a>
-          <a href="/leatherwork">
-            <Container>
-              <Header>LEATHER WORK</Header>
-              <Text>Handmade products from vegetable tanned eco leather</Text>
-            </Container>
-          </a>
+          <Container href="/resume">
+            <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
+            <Text>
+              View my experience in Business Strategy, Project Managagement,
+              Product Ownership, People Experience & Marketing
+            </Text>
+          </Container>
 
-          <a href="/other">
-            <Container>
-              <Header>OTHER</Header>
-              <Text>Projects & Hobbies</Text>
-            </Container>
-          </a>
+          <Container href="/webdevelopment">
+            <Header>WEB DEVELOPMENT</Header>
+            <Text>
+              Single- and multipage websites for freelancers or small companies
+            </Text>
+          </Container>
+
+          <Container href="/leatherwork">
+            <Header>LEATHER WORK</Header>
+            <Text>Handmade products from vegetable tanned eco leather</Text>
+          </Container>
+
+          <Container href="/other">
+            <Header>OTHER</Header>
+            <Text>Projects & Hobbies</Text>
+          </Container>
         </SecondContainer>
-        <AboutContainer>
+        <div>
           <Div>
-            <AboutText>About me</AboutText>
+            <AboutText>Welcome to my creative hub.</AboutText>
+            <SmallText>Some text about me</SmallText>
           </Div>
-        </AboutContainer>
+        </div>
       </HeadContainer>
     </Section>
   );

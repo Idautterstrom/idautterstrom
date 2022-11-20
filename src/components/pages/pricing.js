@@ -59,13 +59,15 @@ const Pricing = () => {
         <Container>
           <SmallHeader>SEK</SmallHeader>
           <Text>Single-page website: 5000 SEK</Text>
-          <Text>Multi-page website: 6000 SEK + 500 SEK per added page</Text>
+          <Text>Multi-page website: 6000 SEK + 1000 SEK per added page</Text>
           <TextVat>All prices excl. VAT.</TextVat>
         </Container>
         <Container>
           <SmallHeader>&euro; Euro</SmallHeader>
           <Text>Single-page website: 500 &euro;</Text>
-          <Text>Multi-page website: 600 &euro; + 50 &euro; per added page</Text>
+          <Text>
+            Multi-page website: 600 &euro; + 100 &euro; per added page
+          </Text>
           <TextVat>All prices excl. VAT.</TextVat>
         </Container>
       </DivContainer>

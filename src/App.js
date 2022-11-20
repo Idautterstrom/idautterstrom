@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import BackgroundImage from "./img/background3.jpg";
+import BackgroundImage from "./img/background11.png";
 
 import Home from "./components/home";
 import Navbar from "./components/navbar";

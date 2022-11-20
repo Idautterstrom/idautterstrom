@@ -15,18 +15,18 @@ const SectionContainer = styled.div`
 
 const TextContainer = styled.div`
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
 `;
 
 const InfoText = styled.p`
-  font-family: "poppins", serif;
+  font-family: "raleway", serif;
   font-size: 60px;
   text-align: center;
 `;
 
 const Arrow = styled.p`
-  font-size: 70px;
-  margin-left: 50%;
+  font-size: 80px;
+  text-align: center;
   transform: scale(1);
   animation: pulse 2s infinite;
   @keyframes pulse {
@@ -46,7 +46,8 @@ const HeadContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  padding: 50px;
+  margin-top: 40px;
+  margin-bottom: 100px;
   align-items: center;
 `;
 
@@ -55,9 +56,8 @@ const Container = styled.a`
   flex-direction: column;
   text-decoration: none;
   justify-content: center;
-/*   background: rgba(0,0,0,0.2); */
   padding: 20px;
-  height: 150px;
+  height: 170px;
   box-shadow: 5px 5px 10px lightgray;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -75,7 +75,7 @@ const Container = styled.a`
 `;
 
 const Header = styled.p`
-  font-family: "Raleway", serif;
+  font-family: "poppins", serif;
   font-size: 12px;
   text-align: center;
   font-weight: bold;

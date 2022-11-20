@@ -20,6 +20,20 @@ const Box = styled.div`
   position: absolute;
   justify-content: center;
   margin-left: 10px;
+  animation: animation 2s ease-out;
+  #slide-in {
+    text-align: center;
+    color: #fff;
+  }
+  @keyframes animation {
+    0% {
+      opacity: 0;
+      left: -700px;
+    }
+    100% {
+      left: 0;
+    }
+  }
   @media (min-width: 768px) {
     align-items: left;
     margin-left: 70px;

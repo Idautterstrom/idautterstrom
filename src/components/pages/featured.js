@@ -22,10 +22,11 @@ const InfoText = styled.p`
   font-family: "raleway", serif;
   font-size: 60px;
   text-align: center;
+  text-shadow: 2px 2px lightgray;
 `;
 
 const Arrow = styled.p`
-  font-size: 80px;
+  font-size: 100px;
   text-align: center;
   transform: scale(1);
   animation: pulse 2s infinite;
@@ -76,7 +77,7 @@ const Container = styled.a`
 
 const Header = styled.p`
   font-family: "poppins", serif;
-  font-size: 12px;
+  font-size: 15px;
   text-align: center;
   font-weight: bold;
   color: black;

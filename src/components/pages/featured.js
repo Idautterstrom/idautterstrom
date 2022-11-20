@@ -2,43 +2,23 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  margin-left: 10%;
-  margin-right: 10%;
-  padding: 20px;
-`;
-const HeaderText = styled.p`
-  font-family: "raleway", serif;
-  font-size: 60px;
-  font-weight: bold;
-`;
-
-const HeaderContainer = styled.div`
-  display: flex;
-  border-bottom-style: double;
-  justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
 `;
 
 const HeadContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-`;
-
-const SecondContainer = styled.div`
-  flex-direction: column;
-  border-right-style: double;
-  margin-top: 20px;
+  grid-gap: 10px;
 `;
 
 const Container = styled.a`
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px whitesmoke;
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-left: 40px;
   padding: 20px;
+  height: 150px;
+  background-color: black;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
@@ -57,74 +37,49 @@ const Container = styled.a`
 const Header = styled.p`
   font-family: "Raleway", serif;
   font-size: 20px;
-  text-align: right;
-  color: black;
+  text-align: center;
+  font-weight: bold;
+  color: white;
 `;
 
 const Text = styled.p`
   font-family: "Poppins", serif;
-  font-size: 12px;
-  text-align: right;
-  color: black;
+  font-size: 15px;
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: white;
   margin-top: -5px;
 `;
-
-const Div = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 10px;
-  margin-top: 20px;
-  margin-left: 20px;
-`;
-
-const AboutText = styled.p`
-  font-family: "poppins", serif;
-  font-size: 40px;
-  color: black;
-  margin-right: 100px;
-`;
-
-const SmallText = styled.p``;
 
 const Featured = () => {
   return (
     <Section>
-      <HeaderContainer>
-        <HeaderText>Welcome to my creative hub.</HeaderText>
-      </HeaderContainer>
       <HeadContainer>
-        <SecondContainer>
-          <Container href="/resume">
-            <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
-            <Text>
-              View my experience in Business Strategy, Project Managagement,
-              Product Ownership, People Experience & Marketing
-            </Text>
-          </Container>
+        <Container href="/resume">
+          <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
+          <Text>
+            View my experience in Business Strategy, Project Managagement,
+            Product Ownership, People Experience & Marketing
+          </Text>
+        </Container>
 
-          <Container href="/webdevelopment">
-            <Header>WEB DEVELOPMENT</Header>
-            <Text>
-              Single- and multipage websites for freelancers or small companies
-            </Text>
-          </Container>
+        <Container href="/webdevelopment">
+          <Header>WEB DEVELOPMENT</Header>
+          <Text>
+            Single- and multipage websites for freelancers or small companies
+          </Text>
+        </Container>
 
-          <Container href="/leatherwork">
-            <Header>LEATHER WORK</Header>
-            <Text>Handmade products from vegetable tanned eco leather</Text>
-          </Container>
+        <Container href="/leatherwork">
+          <Header>LEATHER WORK</Header>
+          <Text>Handmade products from vegetable tanned eco leather</Text>
+        </Container>
 
-          <Container href="/other">
-            <Header>OTHER</Header>
-            <Text>Projects & Hobbies</Text>
-          </Container>
-        </SecondContainer>
-        <div>
-          <Div>
-            <AboutText>Welcome to my creative hub.</AboutText>
-            <SmallText>Some text about me</SmallText>
-          </Div>
-        </div>
+        <Container href="/other">
+          <Header>OTHER</Header>
+          <Text>Projects & Hobbies</Text>
+        </Container>
       </HeadContainer>
     </Section>
   );

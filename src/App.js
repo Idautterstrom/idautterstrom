@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
+import BackgroundImage from "./img/background3.jpg";
 
 import Home from "./components/home";
 import Navbar from "./components/navbar";
@@ -17,6 +18,9 @@ const Body = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background-image: url(${BackgroundImage});
+  width: 100%;
+  height: 100%;
 `;
 
 export const App = () => {

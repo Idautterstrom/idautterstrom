@@ -52,7 +52,7 @@ const HeadContainer = styled.div`
   align-items: center;
 `;
 
-const Container = styled.a`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   text-decoration: none;

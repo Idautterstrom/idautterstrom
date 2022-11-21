@@ -1,49 +1,65 @@
 import React from "react";
 import styled from "styled-components";
 
-const FootBox = styled.section`
+const FootBox = styled.a`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 100px;
   margin-top: auto;
-  height: 100px;
+  text-decoration: none;
 `;
 
 const Text = styled.p`
   font-family: "poppins", serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
+  color: black;
 `;
 
 const Container = styled.div`
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  animation: slide-left 10s linear infinite;
-  @keyframes slide-left {
-    from {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    to {
-      -webkit-transform: translateX(-150%);
-              transform: translateX(-150%);
-    }
+
+  -moz-transform: translateX(120%);
+  -webkit-transform: translateX(120%);
+  transform: translateX(120%);
+  
+  -moz-animation: my-animation 15s linear infinite;
+  -webkit-animation: my-animation 15s linear infinite;
+  animation: my-animation 15s linear infinite;
+}
+
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(120%); }
+  to { -moz-transform: translateX(-120%); }
+}
+
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(120%); }
+  to { -webkit-transform: translateX(-120%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(120%);
+    -webkit-transform: translateX(120%);
+    transform: translateX(120%);
   }
+  to {
+    -moz-transform: translateX(-120%);
+    -webkit-transform: translateX(-120%);
+    transform: translateX(-120%);
   }
+  
 `;
 
 const Footer = () => {
   return (
-    <FootBox>
+    <FootBox href="/contact">
       <Container>
         <Text>
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT ME
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT
+          ME
         </Text>
       </Container>
     </FootBox>

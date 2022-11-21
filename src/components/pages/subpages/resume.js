@@ -4,7 +4,7 @@ import Img from "../../../img/jag.jpg";
 
 const Section = styled.section`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 60px;
   margin-left: 40px;
   margin-right: 40px;
@@ -13,7 +13,8 @@ const Section = styled.section`
 const Picture = styled.div`
   display: flex;
   margin-top: 35px;
-  height: 500px;
+  height: 400px;
+  width: 250px;
   box-shadow: 5px 5px 10px lightgray;
 `;
 
@@ -47,6 +48,11 @@ const Resume = () => {
       <Picture>
         <img src={Img} alt="me" />
       </Picture>
+      <div>
+        <h1>About me</h1>
+        <div>hey hahah</div>
+      </div>
+
       <div>
         <Header>7 + years of Experience</Header>
         <Container>

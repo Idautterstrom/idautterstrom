@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Urban from "../../../img/Urban.jpeg";
 
 const Section = styled.section`
   display: grid;
@@ -9,13 +10,12 @@ const Section = styled.section`
   margin-right: 40px;
 `;
 
-const Container = styled.a`
+const Container = styled.div`
   display: flex;
+  position: relative;
   flex-direction: column;
   text-decoration: none;
   justify-content: center;
-  padding: 20px;
-  height: 300px;
   box-shadow: 5px 5px 10px lightgray;
   transform: scale(1);
   animation: pulse 2s infinite;
@@ -31,18 +31,28 @@ const Container = styled.a`
   }
 `;
 
-const Text = styled.p`
+const Text = styled.a`
   font-family: "poppins", serif;
   font-size: 25px;
   text-align: center;
   font-weight: bold;
   color: black;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+`;
+
+const Img = styled.img`
+  width: 100%;
+  filter: grayscale(100%);
+  opacity: 20%;
 `;
 
 const Webdev = () => {
   return (
     <Section>
       <Container>
+        <Img src={Urban} alt="me" />
         <Text>Rhodin Consulting & Coaching</Text>
       </Container>
       <Container>

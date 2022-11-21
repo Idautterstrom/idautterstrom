@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import Video from "../img/Video2.mp4";
+import Video from "../img/background.mp4";
 import styled from "styled-components";
 
 const Hero = styled.section`
@@ -16,7 +16,6 @@ const Box = styled.div`
   margin-top: 10%;
   padding: 50px;
   border-radius: 10px;
-  background-color: black;
   position: absolute;
   justify-content: center;
   margin-left: 10px;
@@ -28,10 +27,10 @@ const Box = styled.div`
   @keyframes animation {
     0% {
       opacity: 0;
-      left: -700px;
+      top: -700px;
     }
     100% {
-      left: 0;
+      top: 0;
     }
   }
   @media (min-width: 768px) {
@@ -50,8 +49,8 @@ const Text = styled.h2`
 
 const SmallText = styled.p`
   font-family: "poppins", serif;
-  font-size: 20px;
-  color: white;
+  font-size: 30px;
+  color: #fbd44a;
   margin-top: -20px;
 `;
 

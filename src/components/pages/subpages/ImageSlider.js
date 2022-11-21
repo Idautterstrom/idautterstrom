@@ -4,7 +4,7 @@ const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
-    height: "100%",
+    height: "450px",
     position: "relative",
   };
 
@@ -41,7 +41,11 @@ const ImageSlider = ({ slides }) => {
 
   const dotsContainerStyles = {
     display: "flex",
+    position: "absolute",
     justifyContent: "center",
+    bottom: "-20px",
+    left: "50%",
+    transform: "translateX(-50%)",
   };
 
   const dotStyles = {
@@ -66,6 +70,11 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(slideIndex);
   };
 
+  const slideStylesWidthBackground = {
+    ...slideStyles,
+    backgroundImage: `url(${slides[currentIndex].url})`,
+  };
+
   return (
     <div style={sliderStyles}>
       <div style={leftArrowStyles} onClick={goToPrevious}>
@@ -74,7 +83,7 @@ const ImageSlider = ({ slides }) => {
       <div style={rightArrowStyles} onClick={goToNext}>
         →
       </div>
-      <div style={slideStyles}></div>
+      <div style={slideStylesWidthBackground}></div>
       <div style={dotsContainerStyles}>
         {slides.map((slide, slideIndex) => (
           <div

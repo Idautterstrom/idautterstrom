@@ -6,13 +6,15 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10%;
-  margin: 40px;
-  height: 400px;
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 100%;
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
 `;
 
 const Text = styled.p`
@@ -23,6 +25,7 @@ const Text = styled.p`
 const SmallText = styled.p`
   font-family: "Poppins", serif;
   font-size: 20px;
+  color: #de8785;
 `;
 
 const Leather = () => {

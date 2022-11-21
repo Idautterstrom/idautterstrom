@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import Header from "./header";
+import Heather from "./header";
 
 const HomeGrid = styled.div`
   display: grid;
@@ -10,14 +10,12 @@ const HomeGrid = styled.div`
   }
 `;
 
-const Home = () => {
+const Header = () => {
   return (
     <HomeGrid>
-      <div>
-        <Header />
-      </div>
+      <Heather />
     </HomeGrid>
   );
 };
 
-export default Home;
+export default Header;

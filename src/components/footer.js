@@ -11,7 +11,7 @@ const Text = styled.p`
   font-family: "poppins", serif;
   font-size: 40px;
   font-weight: bold;
-  color: black;
+  color: #1d00fb;
 `;
 
 const Container = styled.div`

@@ -2,20 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  display: flex;
   margin-left: 20px;
   margin-right: 20px;
-`;
-
-const SectionContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
 `;
 
 const TextContainer = styled.div`
   justify-content: center;
-  padding: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
 `;
 
 const InfoText = styled.p`
@@ -26,7 +22,7 @@ const InfoText = styled.p`
 `;
 
 const Arrow = styled.p`
-  font-size: 100px;
+  font-size: 80px;
   text-align: center;
   transform: scale(1);
   animation: pulse 2s infinite;
@@ -43,16 +39,14 @@ const Arrow = styled.p`
   }
 `;
 
-const HeadContainer = styled.div`
+const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
-  margin-top: 40px;
-  margin-bottom: 100px;
   align-items: center;
 `;
 
-const Container = styled.div`
+const LinkContainer = styled.a`
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -96,38 +90,36 @@ const Text = styled.p`
 const Featured = () => {
   return (
     <Section>
-      <SectionContainer>
-        <TextContainer>
-          <InfoText>Welcome to my creative hub.</InfoText>
-          <Arrow>→</Arrow>
-        </TextContainer>
-        <HeadContainer>
-          <Container href="/resume">
-            <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
-            <Text>
-              View my experience in Business Strategy, Project Managagement,
-              Product Ownership, People Experience & Marketing
-            </Text>
-          </Container>
+      <TextContainer>
+        <InfoText>Welcome to my creative hub.</InfoText>
+        <Arrow>→</Arrow>
+      </TextContainer>
+      <Container>
+        <LinkContainer href="/resume">
+          <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
+          <Text>
+            View my experience in Business Strategy, Project Managagement,
+            Product Ownership, People Experience & Marketing
+          </Text>
+        </LinkContainer>
 
-          <Container href="/webdevelopment">
-            <Header>WEB DEVELOPMENT</Header>
-            <Text>
-              Single- and multipage websites for freelancers & small companies
-            </Text>
-          </Container>
+        <LinkContainer href="/webdevelopment">
+          <Header>WEB DEVELOPMENT</Header>
+          <Text>
+            Single- and multipage websites for freelancers & small companies
+          </Text>
+        </LinkContainer>
 
-          <Container href="/leatherwork">
-            <Header>LEATHER WORK</Header>
-            <Text>Handmade products from vegetable tanned eco leather</Text>
-          </Container>
+        <LinkContainer href="/leatherwork">
+          <Header>LEATHER WORK</Header>
+          <Text>Handmade products from vegetable tanned eco leather</Text>
+        </LinkContainer>
 
-          <Container href="/other">
-            <Header>OTHER</Header>
-            <Text>Projects & Hobbies</Text>
-          </Container>
-        </HeadContainer>
-      </SectionContainer>
+        <LinkContainer href="/other">
+          <Header>OTHER</Header>
+          <Text>Projects & Hobbies</Text>
+        </LinkContainer>
+      </Container>
     </Section>
   );
 };

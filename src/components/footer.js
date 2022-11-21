@@ -21,9 +21,9 @@ const Container = styled.div`
   -webkit-transform: translateX(120%);
   transform: translateX(120%);
   
-  -moz-animation: my-animation 15s linear infinite;
-  -webkit-animation: my-animation 15s linear infinite;
-  animation: my-animation 15s linear infinite;
+  -moz-animation: my-animation 20s linear infinite;
+  -webkit-animation: my-animation 20s linear infinite;
+  animation: my-animation 20s linear infinite;
 }
 
 @-moz-keyframes my-animation {
@@ -58,8 +58,7 @@ const Footer = () => {
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT
-          ME
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT ME
         </Text>
       </Container>
     </FootBox>

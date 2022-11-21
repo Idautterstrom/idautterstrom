@@ -1,9 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Email from "../img/Email.png";
-import Phone from "../img/Phone.png";
-import LinkedIn from "../img/Li-logo.png";
-import Instagram from "../img/Instagram.png";
 
 const FootBox = styled.section`
   display: flex;
@@ -15,32 +11,40 @@ const FootBox = styled.section`
   height: 100px;
 `;
 
+const Text = styled.p`
+  font-family: "poppins", serif;
+  font-size: 50px;
+  font-weight: bold;
+`;
+
 const Container = styled.div`
   display: flex;
   gap: 20px;
-`;
-
-const Img = styled.a`
-  display: flex;
-  height: 40px;
+  justify-content: center;
+  animation: slide-left 10s linear infinite;
+  @keyframes slide-left {
+    from {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-150%);
+              transform: translateX(-150%);
+    }
+  }
+  }
 `;
 
 const Footer = () => {
   return (
     <FootBox>
       <Container>
-        <Img href="mailto: ida.utterstrom@hotmail.com">
-          <img src={Email} alt="email" />
-        </Img>
-        <Img href="https://wa.me/+46760465094?text=">
-          <img src={Phone} alt="phone" />
-        </Img>
-        <Img href="https://www.linkedin.com/in/ida-u-9361b7a9">
-          <img src={LinkedIn} alt="linkedin" />
-        </Img>
-        <Img href="https://www.instagram.com/idaswebdev/?hl=en">
-          <img src={Instagram} alt="instagram" />
-        </Img>
+        <Text>
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; CONTACT ME
+        </Text>
       </Container>
     </FootBox>
   );

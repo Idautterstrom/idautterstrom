@@ -19,7 +19,7 @@ const Box = styled.div`
   position: absolute;
   justify-content: center;
   margin-left: 10px;
-  animation: animation 2s ease-out;
+  animation: animation 3s ease-out;
   #slide-in {
     text-align: center;
     color: #fff;
@@ -27,10 +27,10 @@ const Box = styled.div`
   @keyframes animation {
     0% {
       opacity: 0;
-      top: -700px;
+      left: -700px;
     }
     100% {
-      top: 0;
+      left: 0;
     }
   }
   @media (min-width: 768px) {

@@ -21,6 +21,7 @@ const Container = styled.section`
   margin-right: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
+  box-shadow: 5px 5px 10px gray;
 `;
 
 const InfoContainer = styled.div`

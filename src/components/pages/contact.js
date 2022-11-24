@@ -17,6 +17,7 @@ const Container = styled.section`
   grid-template-columns: 1fr 1fr;
   grid-gap: 80px;
   background-color: #fbd44a;
+  margin-top: 80px;
   margin-left: 100px;
   margin-right: 100px;
   padding-top: 100px;

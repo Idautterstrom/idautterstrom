@@ -5,9 +5,11 @@ import "./styles/navbar.css";
 import Logo from "../img/LOGO 2.png";
 import styled from "styled-components";
 
-const LogoContainer = styled.div`
+const LogoContainer = styled.a`
   display: flex;
   height: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
 `;
 
 export default function Navbar() {
@@ -33,22 +35,16 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-        <LogoContainer>
-          <img src={Logo} alt="logo" />
-        </LogoContainer>
-
         {(toggleMenu || screenWidth > 500) && (
           <ul className="list">
-            <li className="items">
-              <a className="link" href="/">
-                home
-              </a>
-            </li>
             <li className="items">
               <a className="link" href="/featured">
                 featured | resumé
               </a>
             </li>
+            <LogoContainer href="/">
+              <img src={Logo} alt="logo" />
+            </LogoContainer>
             <li className="items">
               <a className="link" href="/pricing">
                 pricing

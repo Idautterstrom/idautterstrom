@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Urban from "../../../img/Urban.jpeg";
+import RB from "../../../img/RB.jpeg";
 
 const Section = styled.section`
   display: grid;
@@ -93,31 +94,11 @@ const Webdev = () => {
           </SmallText>
         </TextContainer>
       </Container>
-      <Container href="https://rhodinconsulting.com/">
-        <Img src={Urban} alt="me" />
-        <TextContainer>
-          <Text>Rhodin Consulting & Coaching</Text>
-          <SmallText>
-            Multipage website made in React, using JavaScript & Styled
-            components.
-          </SmallText>
-        </TextContainer>
-      </Container>
-      <Container href="https://rhodinconsulting.com/">
-        <Img src={Urban} alt="me" />
-        <TextContainer>
-          <Text>Rhodin Consulting & Coaching</Text>
-          <SmallText>
-            Multipage website made in React, using JavaScript & Styled
-            components.
-          </SmallText>
-        </TextContainer>
-      </Container>
       <Container href="https://recommendedby.se/">
-        <Img src={Urban} alt="me" />
+        <Img src={RB} alt="me" />
         <TextContainer>
           <Text>Recommended by AB</Text>
-          <SmallText>Multipage website made in wordpress.</SmallText>
+          <SmallText>Website made in Wordpress.</SmallText>
         </TextContainer>
       </Container>
     </Section>

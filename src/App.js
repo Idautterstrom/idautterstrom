@@ -12,14 +12,15 @@ import Leather from "./components/pages/subpages/leather";
 import Other from "./components/pages/subpages/other";
 import Resume from "./components/pages/subpages/resume";
 import Webdev from "./components/pages/subpages/webdev";
+import Image from "../src/img/background4.jpg";
 
 const Body = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #d1c9be;
   width: 100%;
   height: 100%;
+  background-image: url(${Image});
 `;
 
 export const App = () => {

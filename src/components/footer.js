@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const FootBox = styled.a`
   display: flex;
-  margin-top: auto;
+  margin-left: auto;
   text-decoration: none;
 `;
 

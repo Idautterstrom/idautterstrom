@@ -12,7 +12,7 @@ import Leather from "./components/pages/subpages/leather";
 import Other from "./components/pages/subpages/other";
 import Resume from "./components/pages/subpages/resume";
 import Webdev from "./components/pages/subpages/webdev";
-import Image from "../src/img/background4.jpg";
+import Image from "../src/img/background14.jpg";
 
 const Body = styled.div`
   min-height: 100vh;
@@ -20,7 +20,8 @@ const Body = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-image: url(${Image});
+  background-color: whitesmoke;
+  /*   background-image: url(${Image}); */
 `;
 
 export const App = () => {

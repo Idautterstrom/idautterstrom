@@ -3,65 +3,123 @@ import React from "react";
 /* import Video from "../img/background.mp4"; */
 import styled from "styled-components";
 
-const Hero = styled.section`
-  width: cover;
-  position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
+const Container = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+  background-color: #ede8e2;
 `;
 
-const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-top: 8%;
-  padding: 50px;
-  border-radius: 10px;
-  position: absolute;
-  justify-content: center;
-  animation: animation 3s ease-out;
-  #slide-in {
-    text-align: center;
-  }
-  @keyframes animation {
-    0% {
-      opacity: 0;
-      left: -700px;
+const TitleContainer = styled.div`
+  padding-left: 1em;
+  grid-column: 1 / -1;
+  grid-row: 1;
+
+  font-family: "Prata", serif;
+  font-size: 8vw;
+  width: 100%;
+  z-index: 2;
+
+  animation: outer-left 1s 1s ease both;
+`;
+
+const InnerContainer = styled.div`
+  display: inline-block;
+  animation: inner-left 1s 1s ease both;
+}
+  @keyframes text-clip {
+    from {
+      clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
     }
-    100% {
-      left: 0;
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   }
-  @media (min-width: 768px) {
-    align-items: left;
-    margin-left: 70px;
-    font-size: 35px;
+
+  @keyframes outer-left {
+    from {
+      transform: translateX(50%);
+    }
+    to {
+      transform: none;
+    }
+  }
+
+  @keyframes inner-left {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: none;
+    }
   }
 `;
 
-const Text = styled.h2`
-  font-family: "raleway", serif;
-  color: white;
-  font-size: 80px;
-  text-shadow: 2px 2px black;
+const FirstInner = styled.div`
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 `;
 
-/* const SmallText = styled.p`
-  font-family: "poppins", serif;
-  font-size: 30px;
-  color: #fbd44a;
-  margin-top: -20px;
-`; */
+const SecondInner = styled.div`
+  animation: text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+`;
+
+const First = styled.div``;
+
+const Second = styled.div`
+  display: inline-block;
+`;
+
+const ImageContainer = styled.div`
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: -2rem;
+  opacity: 0.7;
+
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+
+  @keyframes image-in {
+    from {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    to {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+`;
+
+const Image = styled.img`
+  display: block;
+  width: 700px;
+  height: auto;
+`;
 
 const Header = () => {
   return (
-    <Hero>
-      <Box>
-        <Text>
-          PX. Frontend.<br></br> Business Strategy.<br></br> Craftwork.
-        </Text>
-      </Box>
-      {/*       <ReactPlayer url={Video} playing loop muted width="100%" height="100%" />{" "} */}
-    </Hero>
+    <Container>
+      <TitleContainer>
+        <InnerContainer>
+          <First>
+            <FirstInner>Frontend</FirstInner>
+          </First>
+          <Second>
+            <SecondInner>Artistes</SecondInner>
+          </Second>
+        </InnerContainer>
+      </TitleContainer>
+
+      <ImageContainer>
+        <Image
+          src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+          alt=""
+        ></Image>
+      </ImageContainer>
+    </Container>
   );
 };
 

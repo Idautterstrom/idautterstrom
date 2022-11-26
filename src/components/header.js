@@ -19,8 +19,8 @@ const TitleContainer = styled.div`
   grid-column: 1 / -1;
   grid-row: 1;
 
-  font-family: "Prata", serif;
-  font-size: 8vw;
+  font-family: "Rische Serif", serif;
+  font-size: 60px;
   width: 100%;
   z-index: 2;
 
@@ -78,8 +78,7 @@ const Second = styled.div`
 const ImageContainer = styled.div`
   grid-row: 1;
   grid-column: 2;
-  margin-left: -2rem;
-  opacity: 0.7;
+  opacity: 0.2;
 
   animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
 
@@ -105,10 +104,10 @@ const Header = () => {
       <TitleContainer>
         <InnerContainer>
           <First>
-            <FirstInner>Frontend</FirstInner>
+            <FirstInner>PX. Business Strategy.</FirstInner>
           </First>
           <Second>
-            <SecondInner>Artistes</SecondInner>
+            <SecondInner>Frontend. Craftwork.</SecondInner>
           </Second>
         </InnerContainer>
       </TitleContainer>

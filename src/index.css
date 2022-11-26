@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: 'Rische Serif';
+  src: local('Rische Serif'), url(./fonts/RischeSerif.ttf) format('truetype');
+}

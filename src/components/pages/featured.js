@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Section = styled.section`
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 `;
@@ -15,7 +16,7 @@ const TextContainer = styled.div`
 `;
 
 const InfoText = styled.p`
-  font-family: "raleway", serif;
+  font-family: "Rische Serif", serif;
   font-size: 60px;
   text-align: center;
   text-shadow: 2px 2px lightgray;
@@ -24,6 +25,8 @@ const InfoText = styled.p`
 const Arrow = styled.p`
   font-size: 80px;
   text-align: center;
+  font-family: "Rische Serif", serif;
+  text-shadow: 2px 2px lightgray;
   transform: scale(1);
   animation: pulse 2s infinite;
   @keyframes pulse {
@@ -42,12 +45,13 @@ const Arrow = styled.p`
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
   align-items: center;
 `;
 
 const LinkContainer = styled.a`
   display: flex;
+  background-color: #ede8e2;
   flex-direction: column;
   text-decoration: none;
   justify-content: center;
@@ -70,7 +74,7 @@ const LinkContainer = styled.a`
 `;
 
 const Header = styled.p`
-  font-family: "poppins", serif;
+  font-family: "Rische Serif", serif;
   font-size: 15px;
   text-align: center;
   font-weight: bold;

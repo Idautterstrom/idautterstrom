@@ -16,8 +16,8 @@ const Container = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 80px;
-  background-color: #fbd44a;
-  margin-top: 80px;
+  background-color: #ede8e2;
+  margin-top: 40px;
   margin-left: 100px;
   margin-right: 100px;
   padding-top: 100px;
@@ -37,7 +37,7 @@ const ImgContainer = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: "raleway", serif;
+  font-family: "Rische Serif", serif;
   font-size: 30px;
   font-weight: bold;
 `;
@@ -98,7 +98,7 @@ const Contact = () => {
   return (
     <Container>
       <InfoContainer>
-        <Text>Say hello!</Text>
+        <Text>SAY HELLO!</Text>
         <SmallText>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

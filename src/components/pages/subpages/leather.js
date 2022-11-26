@@ -6,8 +6,10 @@ const Section = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10%;
+  margin-top: 40px;
   margin-left: 40px;
   margin-right: 40px;
+  margin-bottom: 100px;
   height: 100%;
 `;
 
@@ -18,7 +20,7 @@ const TextContainer = styled.div`
 `;
 
 const Text = styled.p`
-  font-family: "Poppins", serif;
+  font-family: "Rische Serif", serif;
   font-size: 40px;
 `;
 

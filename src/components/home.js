@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import Heather from "./header";
 
-const HomeGrid = styled.div`
+const HomeGrid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   @media (min-width: 768px) {

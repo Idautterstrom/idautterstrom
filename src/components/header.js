@@ -6,10 +6,10 @@ import styled from "styled-components";
 const Container = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding-top: 20px;
+  padding-bottom: 40px;
   margin-left: 40px;
   margin-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
   align-items: center;
   background-color: #ede8e2;
 `;
@@ -114,7 +114,7 @@ const Header = () => {
 
       <ImageContainer>
         <Image
-          src="https://images.unsplash.com/photo-1616362355051-6a9f8c434fff?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxNzE0MTYzNQ&ixlib=rb-1.2.1&q=80&w=800&h=600"
+          src="https://i.ibb.co/DCPs86B/rsz-2rsz-1ewoud-van-den-branden-e3uuipq3sny-unsplash-1-1-2.jpg"
           alt=""
         ></Image>
       </ImageContainer>

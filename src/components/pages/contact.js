@@ -12,14 +12,19 @@ const encode = (data) => {
     .join("&");
 };
 
+const BigContainer = styled.section`
+  display: flex;
+  justify-content: center;
+`;
+
 const Container = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 1000px;
+  align-items: center;
   grid-gap: 80px;
   background-color: #ede8e2;
   margin-top: 40px;
-  margin-left: 100px;
-  margin-right: 100px;
   padding-top: 100px;
   padding-bottom: 100px;
   box-shadow: 5px 5px 10px gray;
@@ -96,68 +101,68 @@ const Contact = () => {
   }
 
   return (
-    <Container>
-      <InfoContainer>
-        <Text>SAY HELLO!</Text>
-        <SmallText>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-        </SmallText>
-        <ImgContainer>
-          <Img href="mailto: ida.utterstrom@hotmail.com">
-            <img src={Email} alt="email" />
-          </Img>
-          <Img href="https://wa.me/+46760465094?text=">
-            <img src={Phone} alt="phone" />
-          </Img>
-          <Img href="https://www.linkedin.com/in/ida-u-9361b7a9">
-            <img src={LinkedIn} alt="linkedin" />
-          </Img>
-          <Img href="https://www.instagram.com/idaswebdev/?hl=en">
-            <img src={Instagram} alt="instagram" />
-          </Img>
-        </ImgContainer>
-      </InfoContainer>
-      <FormContainer>
-        <form
-          onSubmit={handleSubmit}
-          className="form"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+    <BigContainer>
+      <Container>
+        <InfoContainer>
+          <Text>SAY HELLO!</Text>
+          <SmallText>
+            For any business inquiries contact me via the form or any medias
+            below.
+          </SmallText>
+          <ImgContainer>
+            <Img href="mailto: ida.utterstrom@hotmail.com">
+              <img src={Email} alt="email" />
+            </Img>
+            <Img href="https://wa.me/+46760465094?text=">
+              <img src={Phone} alt="phone" />
+            </Img>
+            <Img href="https://www.linkedin.com/in/ida-u-9361b7a9">
+              <img src={LinkedIn} alt="linkedin" />
+            </Img>
+            <Img href="https://www.instagram.com/idaswebdev/?hl=en">
+              <img src={Instagram} alt="instagram" />
+            </Img>
+          </ImgContainer>
+        </InfoContainer>
+        <FormContainer>
+          <form
+            onSubmit={handleSubmit}
+            className="form"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="contact" />
 
-          <label className="label"></label>
-          <input
-            type="text"
-            value={name}
-            placeholder="name"
-            onChange={(e) => setName(e.target.value)}
-          />
-          <label className="label"></label>
-          <input
-            type="email"
-            value={email}
-            placeholder="email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <label className="label"></label>
-          <input
-            className="message-input"
-            type="text"
-            value={message}
-            placeholder="message"
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <button className="submit-button" type="submit">
-            Submit →
-          </button>
-        </form>
-      </FormContainer>
-    </Container>
+            <label className="label"></label>
+            <input
+              type="text"
+              value={name}
+              placeholder="name"
+              onChange={(e) => setName(e.target.value)}
+            />
+            <label className="label"></label>
+            <input
+              type="email"
+              value={email}
+              placeholder="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <label className="label"></label>
+            <input
+              className="message-input"
+              type="text"
+              value={message}
+              placeholder="message"
+              onChange={(e) => setMessage(e.target.value)}
+            />
+            <button className="submit-button" type="submit">
+              Submit →
+            </button>
+          </form>
+        </FormContainer>
+      </Container>
+    </BigContainer>
   );
 };
 

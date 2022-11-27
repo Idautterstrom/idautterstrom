@@ -11,7 +11,6 @@ const ImageSlider = ({ slides }) => {
   const slideStyles = {
     width: "100%",
     height: "100%",
-    borderRadius: "10px",
     backgroundPosition: "center",
     backgroundSize: "cover",
     backgroundImage: "url(§{slides[currentIndex].url})",
@@ -21,6 +20,7 @@ const ImageSlider = ({ slides }) => {
     position: "absolute",
     top: "50%",
     transform: "translate(0, -50%)",
+    fontFamily: "Rische Serif",
     left: "32px",
     fontSize: "45px",
     color: "black",
@@ -32,6 +32,7 @@ const ImageSlider = ({ slides }) => {
     position: "absolute",
     top: "50%",
     transform: "translate(0, -50%)",
+    fontFamily: "Rische Serif",
     right: "32px",
     fontSize: "45px",
     color: "black",
@@ -49,9 +50,9 @@ const ImageSlider = ({ slides }) => {
   };
 
   const dotStyles = {
-    margin: "0 3px",
+    margin: "0 2px",
     cursor: "pointer",
-    fontSize: "100px",
+    fontSize: "90px",
   };
 
   const goToPrevious = () => {

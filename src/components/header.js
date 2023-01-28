@@ -1,6 +1,4 @@
 import React from "react";
-/* import ReactPlayer from "react-player"; */
-/* import Video from "../img/background.mp4"; */
 import styled from "styled-components";
 import Image from "../img/BG1.jpg";
 import Navbar from "./navbar";
@@ -18,7 +16,9 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
+  display: none;
   @media (min-width: 768px) {
+    display: flex;
     position: relative;
     padding-left: 1em;
     color: #3d1920;

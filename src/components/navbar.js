@@ -40,8 +40,11 @@ const LogoContainer = styled.a`
   display: flex;
   position: absolute;
   left: 20px;
-  height: 25px;
+  height: 20px;
   padding: 5px;
+  @media (min-width: 768px) {
+    height: 25px;
+  }
 `;
 
 const Button = styled.button`

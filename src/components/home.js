@@ -8,8 +8,7 @@ import QuoteSign from "img/Quotation.png";
 const HomeGrid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  @media (min-width: 768px) {
-  }
+
 `;
 
 const Container = styled.div`
@@ -19,8 +18,8 @@ const Container = styled.div`
   justify-content: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -38,7 +37,7 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 250px;
+  width: 200px;
   height: auto;
   border-radius: 400px 400px 0px 0px;
   border: 1px solid black;
@@ -67,8 +66,8 @@ const QuoteContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 10px;
+  margin-right: 10px
   padding-bottom: 50px;
   margin-top: 100px;
   justify-content: center;
@@ -136,7 +135,7 @@ const Header = () => {
             Inspiring that she's always hands on and rolling up her sleeves,
             always wise knowing what to do and brave to speak the truth. But
             always humble, never proud or letting her ego speak.
-          </Quote>{" "}
+          </Quote>
           <Name>Anonymous feedback, Recommended by</Name>
         </SmallContainer>
         <SmallContainer>
@@ -145,7 +144,7 @@ const Header = () => {
             orem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an
-          </Quote>{" "}
+          </Quote>
           <Name>Urban Rhodin, Rhodin Consulting</Name>
         </SmallContainer>
       </QuoteContainer>

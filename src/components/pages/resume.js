@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Navbarsub from "../navbarsub";
 
-const Section = styled.section``;
-
 const NameContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -134,7 +132,7 @@ const Contact = styled.a`
 
 const Resume = () => {
   return (
-    <Section>
+    <section>
       <Navbarsub />
       <NameContainer>
         <NameHeader>
@@ -269,7 +267,7 @@ const Resume = () => {
           </ButtonContainer>
         </Container>
       </ExperienceContainer>
-    </Section>
+    </section>
   );
 };
 

@@ -1,5 +1,4 @@
 import React from "react";
-/* import ImageSlider from "../subpages/ImageSlider"; */
 import styled from "styled-components";
 import Navbarsub from "../navbarsub";
 
@@ -58,7 +57,6 @@ const Leather = () => {
           <Image src="https://i.ibb.co/T1xhSxZ/image.jpg" alt=""></Image>
           <Image src="https://i.ibb.co/rM9tmrb/image-2.jpg" alt=""></Image>
           <Image src="https://i.ibb.co/vZVT8YG/IMG-4194.jpg" alt=""></Image>
-
           <Image
             src="https://i.ibb.co/zFvJkv8/E9-E70-AF0-B213-45-B1-AEDB-AF4-AE4-FDF9-E3-86941-EA2-167-B-4437-AA1-C-948-A9-DC54745-2.jpg"
             alt=""
@@ -71,7 +69,6 @@ const Leather = () => {
           <Image src="https://i.ibb.co/t4538Yb/IMG-4746.jpg" alt=""></Image>
           <Image src="https://i.ibb.co/C2cbKYr/IMG-4940.jpg" alt=""></Image>
         </ImageContainer>
-
         <TextContainer>
           <Text>Handmade leather products.</Text>
           <SmallText>

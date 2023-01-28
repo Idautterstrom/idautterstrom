@@ -48,8 +48,6 @@ const WhiteInfoText = styled.p`
   font-size: 15px;
 `;
 
-const Button = styled.a``;
-
 const Img = styled.img`
   width: 30px;
 `;
@@ -71,9 +69,9 @@ const Featured = () => {
               freelancers & small companies. Using Javascript, HTML, CSS &
               wordpress.
             </WhiteInfoText>
-            <Button href="/webdevelopment">
+            <a href="/webdevelopment">
               <Img src={Arrow} alt="logo" />
-            </Button>
+            </a>
           </TextContainer>
 
           <TextContainer>
@@ -86,9 +84,9 @@ const Featured = () => {
               View my experience in Business Strategy, Project Managagement,
               Product Ownership, People Experience & Marketing.
             </WhiteInfoText>
-            <Button href="/resume">
+            <a href="/resume">
               <Img src={Arrow} alt="logo" />
-            </Button>
+            </a>
           </TextContainer>
 
           <TextContainer>
@@ -101,9 +99,9 @@ const Featured = () => {
               Handmade products made from vegetable tanned leather. All products
               are made from secondhand leather waste from other industries.
             </WhiteInfoText>
-            <Button href="/leatherwork">
+            <a href="/leatherwork">
               <Img src={Arrow} alt="logo" />
-            </Button>
+            </a>
           </TextContainer>
 
           <TextContainer>
@@ -116,9 +114,9 @@ const Featured = () => {
               I have a passion for anything creative. View my other projects &
               hobbies.
             </WhiteInfoText>
-            <Button href="/other">
+            <a href="/other">
               <Img src={Arrow} alt="logo" />
-            </Button>
+            </a>
           </TextContainer>
         </DarkContainer>
       </Section>

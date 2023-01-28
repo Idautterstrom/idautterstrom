@@ -37,7 +37,6 @@ const Image = styled.img`
   border-radius: 400px 400px 0px 0px;
   border: 1px solid black;
   padding: 8px;
-
 `;
 
 const Text = styled.p`
@@ -48,7 +47,7 @@ const Text = styled.p`
 const InfoText = styled.p`
   display: flex;
   font-family: "Cormorant Garamond", serif;
-  font-size: 15px;
+  font-size: 20px;
 `;
 
 const QuoteContainer = styled.div`

@@ -23,15 +23,23 @@ const DarkContainer = styled.div`
 `;
 
 const SecondImage = styled.img`
-  width: 300px;
-  height: auto;
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    width: 300px;
+    height: auto;
+  }
 `;
 
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 280px;
   padding: 10px;
+  width: 280px;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 const WhiteText = styled.p`

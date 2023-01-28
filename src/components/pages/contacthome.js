@@ -6,7 +6,6 @@ import Phone from "../../img/phonewhite.png";
 import LinkedIn from "../../img/liwhite.png";
 import Instagram from "../../img/instawhite.png";
 
-
 const encode = (data) => {
   return Object.keys(data)
     .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -17,51 +16,76 @@ const BigContainer = styled.section`
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 `;
 
 const Color = styled.div`
+margin-top: 50px;
+border: 1px solid black;
+padding: 10px;
+@media (min-width: 768px) {
   width: 1000px;
-  margin-top: 50px;
-  border: 1px solid black;
   border-radius: 300px 300px 300px 0px;
-  padding: 10px;
 `;
 
 const Container = styled.div`
+display: flex;
+flex-direction: column;
+padding-top: 70px;
+padding-bottom: 70px;
+background-color: #3d1920;
+align-items: center;
+justify-content: center;
+@media (min-width: 768px) {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
   grid-gap: 80px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-  background-color: #3d1920;
   border-radius: 300px 300px 300px 0px;
 `;
 
 const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  @media (min-width: 768px) {
+    margin-left: 100px;
+  }
 `;
 
 const ImgContainer = styled.div`
   display: flex;
   gap: 20px;
   margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+  @media (min-width: 768px) {
+    justify-content: left;
+  }
 `;
 
 const Text = styled.p`
   font-family: "Gotu", serif;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
+  text-align: center;
   margin-bottom: -20px;
+  @media (min-width: 768px) {
+    text-align: left;
+    font-size: 30px;
+  }
 `;
 
 const SmallText = styled.p`
   font-family: "Cormorant Garamond", serif;
   font-size: 20px;
   color: white;
+  text-align: center;
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 `;
 
 const Img = styled.a`

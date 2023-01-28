@@ -7,7 +7,7 @@ import Instagram from "../img/instagram.png";
 
 const Container = styled.section`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-top: auto;
   justify-content: left;
   align-items: center;
@@ -15,6 +15,9 @@ const Container = styled.section`
   padding-right: 40px;
   padding-top: 20px;
   padding-bottom: 20px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 const ImgContainer = styled.div`
@@ -35,7 +38,9 @@ const Text = styled.p`
   font-size: 12px;
   text-align: center;
   text-justify: center;
-  margin-left: 400px;
+  @media (min-width: 768px) {
+    margin-left: 400px;
+  }
 `;
 
 const Footer = () => {

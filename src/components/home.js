@@ -13,40 +13,53 @@ const HomeGrid = styled.section`
 `;
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
   margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
   margin-bottom: 50px;
-  grid-gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 150px;
+    margin-right: 150px;
+    grid-gap: 50px;
+  }
 `;
 
 const ImageContainer = styled.div`
   display: flex;
-  justify-content: right;
+  @media (min-width: 768px) {
+    justify-content: right;
+  }
 `;
 
-const HeaderContainer = styled.div``;
-
 const Image = styled.img`
-  width: 400px;
+  width: 250px;
   height: auto;
   border-radius: 400px 400px 0px 0px;
   border: 1px solid black;
   padding: 8px;
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `;
 
 const Text = styled.p`
-  font-family: "gotu", serif;
+text-align: center;
+font-family: "gotu", serif;
+font-size: 20px;
+@media (min-width: 768px) {
   font-size: 30px;
 `;
 
 const InfoText = styled.p`
-  display: flex;
-  font-family: "Cormorant Garamond", serif;
+font-family: "Cormorant Garamond", serif;
+text-align: center;
+@media (min-width: 768px) {
   font-size: 20px;
 `;
 
@@ -96,7 +109,7 @@ const Header = () => {
             alt=""
           ></Image>
         </ImageContainer>
-        <HeaderContainer>
+        <div>
           <Text>WELCOME TO MY CREATIVE HUB</Text>
           <InfoText>
             With a passion for design, web development, business strategy,
@@ -105,7 +118,7 @@ const Header = () => {
             management & development of websites for freelancers & small
             businesses.
           </InfoText>
-        </HeaderContainer>
+        </div>
       </Container>
       <Featured />
       <QuoteContainer>

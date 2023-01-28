@@ -18,18 +18,18 @@ const Container = styled.div`
 `;
 
 const TitleContainer = styled.div`
-  position: relative;
-  padding-left: 1em;
-  color: #3d1920;
-  grid-column: 1 / -1;
-  grid-row: 1;
-
-  font-family: "gotu", serif;
-  font-size: 50px;
-  width: 100%;
-  z-index: 2;
-
-  animation: outer-left 1s 1s ease both;
+  @media (min-width: 768px) {
+    position: relative;
+    padding-left: 1em;
+    color: #3d1920;
+    grid-column: 1 / -1;
+    grid-row: 1;
+    font-family: "gotu", serif;
+    font-size: 50px;
+    width: 100%;
+    z-index: 2;
+    animation: outer-left 1s 1s ease both;
+  } ;
 `;
 
 const InnerContainer = styled.div`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Email from "../img/Email.png";
 import Phone from "../img/Phone.png";
 import LinkedIn from "../img/Li-logo.png";
-import Instagram from "../img/Instagram.png";
+import Instagram from "../img/instagram.png";
 
 const Container = styled.section`
   display: flex;

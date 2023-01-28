@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const sliderStyles = {
     height: "450px",
+    width: "700px",
     position: "relative",
   };
 
@@ -52,7 +53,7 @@ const ImageSlider = ({ slides }) => {
   const dotStyles = {
     margin: "0 2px",
     cursor: "pointer",
-    fontSize: "90px",
+    fontSize: "70px",
   };
 
   const goToPrevious = () => {
@@ -101,3 +102,4 @@ const ImageSlider = ({ slides }) => {
 };
 
 export default ImageSlider;
+ */

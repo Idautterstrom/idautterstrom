@@ -4,11 +4,11 @@ input {
     display: flex;
     width: 300px;
     padding: 10px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 15px;
     font-weight: bold;
     margin-bottom: 15px;
     margin-top: 10px;
-    background-color: whitesmoke;
   }
   
   .message-input {
@@ -19,11 +19,10 @@ input {
   .label {
     display: flex;
     font-size: 15px;
-    font-family: "raleway", serif;
   }
   
   .submit-button {
-    font-family: "Poppins", sans-serif;
+    font-family: "gotu", serif;
     font-weight: bold;
     width: 100px;
     color: Black;

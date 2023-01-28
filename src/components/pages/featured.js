@@ -1,130 +1,128 @@
 import React from "react";
 import styled from "styled-components";
+import Arrow from "img/arrow-right2.png";
+import Navbarsub from "../navbarsub";
 
 const Section = styled.section`
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+`;
+
+const DarkContainer = styled.div`
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+`;
+
+const SecondImage = styled.img`
+  width: 300px;
+  height: auto;
 `;
 
 const TextContainer = styled.div`
-  justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-`;
-
-const InfoText = styled.p`
-  font-family: "Rische Serif", serif;
-  font-size: 60px;
-  text-align: center;
-  text-shadow: 2px 2px lightgray;
-`;
-
-const Arrow = styled.p`
-  font-size: 80px;
-  text-align: center;
-  font-family: "Rische Serif", serif;
-  text-shadow: 2px 2px lightgray;
-  transform: scale(1);
-  animation: pulse 2s infinite;
-  @keyframes pulse {
-    0% {
-      transform: scale(0.95);
-    }
-    70% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.95);
-    }
-  }
-`;
-
-const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  align-items: center;
-`;
-
-const LinkContainer = styled.a`
   display: flex;
-  background-color: #ede8e2;
   flex-direction: column;
-  text-decoration: none;
-  justify-content: center;
-  padding: 20px;
-  height: 170px;
-  box-shadow: 5px 5px 10px lightgray;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  transform-origin: bottom;
-  &:hover {
-    animation-name: bounce;
-    animation-timing-function: ease;
-  }
-  @keyframes bounce {
-    0%   { transform: translateY(0); }
-    50%  { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-  }
-  }
+  width: 280px;
+  padding: 10px;
 `;
 
-const Header = styled.p`
-  font-family: "Rische Serif", serif;
+const WhiteText = styled.p`
+  font-family: "gotu", serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: -10px;
+`;
+
+const WhiteInfoText = styled.p`
+  color: white;
+  font-family: "Cormorant Garamond", serif;
   font-size: 15px;
-  text-align: center;
-  font-weight: bold;
-  color: black;
 `;
 
-const Text = styled.p`
-  font-family: "Poppins", serif;
-  font-size: 10px;
-  text-align: center;
-  margin-right: 10%;
-  margin-left: 10%;
-  color: black;
-  margin-top: -5px;
+const Button = styled.a``;
+
+const Img = styled.img`
+  width: 30px;
 `;
 
 const Featured = () => {
   return (
-    <Section>
-      <TextContainer>
-        <InfoText>Welcome to my creative hub.</InfoText>
-        <Arrow>→</Arrow>
-      </TextContainer>
-      <Container>
-        <LinkContainer href="/resume">
-          <Header>BUSINESS DEVELOPMENT | RESUMÉ</Header>
-          <Text>
-            View my experience in Business Strategy, Project Managagement,
-            Product Ownership, People Experience & Marketing
-          </Text>
-        </LinkContainer>
+    <section>
+      <Navbarsub />
+      <Section>
+        <DarkContainer>
+          <TextContainer>
+            <SecondImage
+              src="https://i.ibb.co/xqwG8tP/dell-7-ZWVn-VSaaf-Y-unsplash.jpg"
+              alt=""
+            ></SecondImage>
+            <WhiteText>Web development</WhiteText>
+            <WhiteInfoText>
+              I design and develop Single- and multipage websites for
+              freelancers & small companies. Using Javascript, HTML, CSS &
+              wordpress.
+            </WhiteInfoText>
+            <Button href="/webdevelopment">
+              <Img src={Arrow} alt="logo" />
+            </Button>
+          </TextContainer>
 
-        <LinkContainer href="/webdevelopment">
-          <Header>WEB DEVELOPMENT</Header>
-          <Text>
-            Single- and multipage websites for freelancers & small companies
-          </Text>
-        </LinkContainer>
+          <TextContainer>
+            <SecondImage
+              src="https://i.ibb.co/kJdp60Z/pexels-fauxels-3182773-2.jpg"
+              alt=""
+            ></SecondImage>
+            <WhiteText>My resumé</WhiteText>
+            <WhiteInfoText>
+              View my experience in Business Strategy, Project Managagement,
+              Product Ownership, People Experience & Marketing.
+            </WhiteInfoText>
+            <Button href="/resume">
+              <Img src={Arrow} alt="logo" />
+            </Button>
+          </TextContainer>
 
-        <LinkContainer href="/leatherwork">
-          <Header>LEATHER WORK</Header>
-          <Text>Handmade products from vegetable tanned eco leather</Text>
-        </LinkContainer>
+          <TextContainer>
+            <SecondImage
+              src="https://i.ibb.co/yVBp4qS/IMG-4586.jpg"
+              alt=""
+            ></SecondImage>
+            <WhiteText>Leather work</WhiteText>
+            <WhiteInfoText>
+              Handmade products made from vegetable tanned leather. All products
+              are made from secondhand leather waste from other industries.
+            </WhiteInfoText>
+            <Button href="/leatherwork">
+              <Img src={Arrow} alt="logo" />
+            </Button>
+          </TextContainer>
 
-        <LinkContainer href="/other">
-          <Header>OTHER</Header>
-          <Text>Projects & Hobbies</Text>
-        </LinkContainer>
-      </Container>
-    </Section>
+          <TextContainer>
+            <SecondImage
+              src="https://i.ibb.co/x1btRPq/IMG-0642-2.jpg"
+              alt=""
+            ></SecondImage>
+            <WhiteText>Other</WhiteText>
+            <WhiteInfoText>
+              I have a passion for anything creative. View my other projects &
+              hobbies.
+            </WhiteInfoText>
+            <Button href="/other">
+              <Img src={Arrow} alt="logo" />
+            </Button>
+          </TextContainer>
+        </DarkContainer>
+      </Section>
+    </section>
   );
 };
 

@@ -2,25 +2,30 @@ import React from "react";
 /* import ReactPlayer from "react-player"; */
 /* import Video from "../img/background.mp4"; */
 import styled from "styled-components";
+import Image from "../img/BG1.jpg";
+import Navbar from "./navbar";
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  padding-top: 20px;
+  display: flex;
+  background-image: url(${Image});
+  background-size: cover;
+  height: 600px;
+  margin-top: -150px;
+  padding-top: 40px;
   padding-bottom: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
   align-items: center;
-  background-color: #ede8e2;
+  background-color: #211d1c;
 `;
 
 const TitleContainer = styled.div`
+  position: relative;
   padding-left: 1em;
+  color: #3d1920;
   grid-column: 1 / -1;
   grid-row: 1;
 
-  font-family: "Rische Serif", serif;
-  font-size: 60px;
+  font-family: "gotu", serif;
+  font-size: 50px;
   width: 100%;
   z-index: 2;
 
@@ -61,6 +66,7 @@ const InnerContainer = styled.div`
 
 const FirstInner = styled.div`
   display: inline-block;
+
   animation: inner-left 1s 1s ease both,
     text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
 `;
@@ -75,50 +81,23 @@ const Second = styled.div`
   display: inline-block;
 `;
 
-const ImageContainer = styled.div`
-  grid-row: 1;
-  grid-column: 2;
-  opacity: 0.2;
-
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
-
-  @keyframes image-in {
-    from {
-      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    to {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-  }
-`;
-
-const Image = styled.img`
-  display: block;
-  width: 700px;
-  height: auto;
-`;
-
 const Header = () => {
   return (
-    <Container>
-      <TitleContainer>
-        <InnerContainer>
-          <First>
-            <FirstInner>PX. Business Strategy.</FirstInner>
-          </First>
-          <Second>
-            <SecondInner>Frontend. Craftwork.</SecondInner>
-          </Second>
-        </InnerContainer>
-      </TitleContainer>
-
-      <ImageContainer>
-        <Image
-          src="https://i.ibb.co/DCPs86B/rsz-2rsz-1ewoud-van-den-branden-e3uuipq3sny-unsplash-1-1-2.jpg"
-          alt=""
-        ></Image>
-      </ImageContainer>
-    </Container>
+    <section>
+      <Navbar />
+      <Container>
+        <TitleContainer>
+          <InnerContainer>
+            <First>
+              <FirstInner>PX. Business Strategy.</FirstInner>
+            </First>
+            <Second>
+              <SecondInner>Frontend. Craftwork.</SecondInner>
+            </Second>
+          </InnerContainer>
+        </TitleContainer>
+      </Container>
+    </section>
   );
 };
 

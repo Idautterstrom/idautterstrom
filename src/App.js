@@ -3,32 +3,27 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
 
 import Home from "./components/home";
-import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Featured from "./components/pages/featured";
 import Pricing from "./components/pages/pricing";
 import Contact from "./components/pages/contact";
-import Leather from "./components/pages/subpages/leather";
-import Other from "./components/pages/subpages/other";
-import Resume from "./components/pages/subpages/resume";
-import Webdev from "./components/pages/subpages/webdev";
-import Image from "../src/img/background14.jpg";
+import Leather from "./components/pages/leather";
+import Other from "./components/pages/other";
+import Resume from "./components/pages/resume";
+import Webdev from "./components/pages/webdev";
 
 const Body = styled.div`
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
-  background-color: whitesmoke;
-  /*   background-image: url(${Image}); */
+  min-height: 100vh;
+  background-color: #e5e4de;
 `;
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Body>
-        <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/featured" element={<Featured />} />

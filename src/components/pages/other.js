@@ -2,10 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Navbarsub from "../navbarsub";
 
-const Container = styled.section`
-  display: flex;
-`;
-
 const Section = styled.div`
   display: flex;
   flex-direction: row;
@@ -51,7 +47,7 @@ const SmallText = styled.p`
 
 const Other = () => {
   return (
-    <Container>
+    <section>
       <Navbarsub />
       <Section>
         <ImageContainer>
@@ -73,7 +69,7 @@ const Other = () => {
           </SmallText>
         </TextContainer>
       </Section>
-    </Container>
+    </section>
   );
 };
 

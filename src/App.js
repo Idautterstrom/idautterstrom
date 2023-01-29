@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Home from "./components/home";
 import Footer from "./components/footer";
 import Featured from "./components/pages/featured";
-import Pricing from "./components/pages/pricing";
 import Contact from "./components/pages/contact";
 import Leather from "./components/pages/leather";
 import Other from "./components/pages/other";
@@ -27,7 +26,6 @@ export const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/featured" element={<Featured />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/leatherwork" element={<Leather />} />
           <Route path="/other" element={<Other />} />

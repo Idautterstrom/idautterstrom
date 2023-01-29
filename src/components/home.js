@@ -43,7 +43,7 @@ const Image = styled.img`
   border: 1px solid black;
   padding: 8px;
   @media (min-width: 768px) {
-    width: 400px;
+    width: 350px;
   }
 `;
 
@@ -53,6 +53,7 @@ font-family: "gotu", serif;
 font-size: 20px;
 @media (min-width: 768px) {
   font-size: 30px;
+  text-align:left; 
 `;
 
 const InfoText = styled.p`
@@ -60,6 +61,7 @@ font-family: "Cormorant Garamond", serif;
 text-align: center;
 @media (min-width: 768px) {
   font-size: 20px;
+  text-align:left; 
 `;
 
 const QuoteContainer = styled.div`

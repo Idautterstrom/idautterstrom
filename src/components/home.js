@@ -3,12 +3,11 @@ import styled from "styled-components";
 import Heather from "./header";
 import Contact from "./pages/contacthome";
 import Featured from "./pages/featuredhome";
-import QuoteSign from "img/Quotation.png";
+import QuoteSign from "../img/Quotation.png";
 
 const HomeGrid = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-
 `;
 
 const Container = styled.div`

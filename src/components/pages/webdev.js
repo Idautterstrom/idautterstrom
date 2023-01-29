@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import RB from "img/Previous work/RB.jpg";
-import BRF from "img/BRFGBG.jpeg";
+import RB from "../../img/Previous work/RB.jpg";
+import BRF from "../../img/Previous work/BRFGBG.jpeg";
 import Pricing from "./pricing";
 import Navbarsub from "../navbarsub";
 

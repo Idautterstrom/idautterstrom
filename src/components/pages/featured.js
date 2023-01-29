@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Arrow from "img/arrow-right2.png";
+import Arrow from "../../img/arrow-right2.png";
 import Navbarsub from "../navbarsub";
 
 const Section = styled.section`
